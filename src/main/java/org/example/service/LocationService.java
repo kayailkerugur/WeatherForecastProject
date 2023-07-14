@@ -41,4 +41,8 @@ public class LocationService {
 
         this.locationList = yeniLocationList;
     }
+
+    public LocationModel[] getLocationList() {
+        return locationList;
+    }
 }
