@@ -1,15 +1,23 @@
 package org.example.model.weather;
 
-public class Wind {
-    private double speed;
-    private long deg;
-    private double gust;
+import java.math.BigDecimal;
 
-    public double getSpeed() {
+public class Wind {
+    private BigDecimal speed;
+    private long deg;
+    private float gust;
+
+    public Wind(BigDecimal speed, long deg, float gust) {
+        this.speed = speed;
+        this.deg = deg;
+        this.gust = gust;
+    }
+
+    public BigDecimal getSpeed() {
         return speed;
     }
 
-    public void setSpeed(double value) {
+    public void setSpeed(BigDecimal value) {
         this.speed = value;
     }
 
@@ -21,11 +29,11 @@ public class Wind {
         this.deg = value;
     }
 
-    public double getGust() {
+    public float getGust() {
         return gust;
     }
 
-    public void setGust(double value) {
+    public void setGust(float value) {
         this.gust = value;
     }
 }

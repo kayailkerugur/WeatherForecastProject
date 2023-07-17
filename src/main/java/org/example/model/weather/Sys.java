@@ -7,6 +7,14 @@ public class Sys {
     private long sunrise;
     private long sunset;
 
+    public  Sys(long type, long id, String country, long sunrise, long sunset) {
+        this.type = type;
+        this.id = id;
+        this.country = country;
+        this.sunrise = sunrise;
+        this.sunset = sunset;
+    }
+
     public long getType() {
         return type;
     }

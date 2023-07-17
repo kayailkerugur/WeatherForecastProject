@@ -15,6 +15,22 @@ public class WeatherModel {
     private String name;
     private long cod;
 
+    public WeatherModel(Coord coord, Weather[] weather, String base, Main main, long visibility, Wind wind, Clouds clouds, long dt, Sys sys, long timezone, long id, String name, long cod) {
+        this.coord = coord;
+        this.weather = weather;
+        this.base = base;
+        this.main = main;
+        this.visibility = visibility;
+        this.wind = wind;
+        this.clouds = clouds;
+        this.dt = dt;
+        this.sys = sys;
+        this.timezone = timezone;
+        this.id = id;
+        this.name = name;
+        this.cod = cod;
+    }
+
     public Coord getCoord() { return coord; }
     public void setCoord(Coord value) { this.coord = value; }
 

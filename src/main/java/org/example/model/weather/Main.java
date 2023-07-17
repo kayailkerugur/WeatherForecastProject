@@ -1,44 +1,57 @@
 package org.example.model.weather;
 
+import java.math.BigDecimal;
+
 public class Main {
-    private double temp;
-    private double feelsLike;
-    private double tempMin;
-    private double tempMax;
+    private BigDecimal temp;
+    private BigDecimal feelsLike;
+    private BigDecimal tempMin;
+    private BigDecimal tempMax;
     private long pressure;
     private long humidity;
     private long seaLevel;
     private long grndLevel;
 
-    public double getTemp() {
+    public Main(BigDecimal temp, BigDecimal feelsLike, BigDecimal tempMin, BigDecimal tempMax, long pressure, long humidity, long seaLevel, long grndLevel) {
+        this.temp = temp;
+        this.feelsLike = feelsLike;
+        this.tempMin = tempMin;
+        this.tempMax = tempMax;
+        this.pressure = pressure;
+        this.humidity = humidity;
+        this.seaLevel = seaLevel;
+        this.grndLevel = grndLevel;
+    }
+
+    public BigDecimal getTemp() {
         return temp;
     }
 
-    public void setTemp(double value) {
+    public void setTemp(BigDecimal value) {
         this.temp = value;
     }
 
-    public double getFeelsLike() {
+    public BigDecimal getFeelsLike() {
         return feelsLike;
     }
 
-    public void setFeelsLike(double value) {
+    public void setFeelsLike(BigDecimal value) {
         this.feelsLike = value;
     }
 
-    public double getTempMin() {
+    public BigDecimal getTempMin() {
         return tempMin;
     }
 
-    public void setTempMin(double value) {
+    public void setTempMin(BigDecimal value) {
         this.tempMin = value;
     }
 
-    public double getTempMax() {
+    public BigDecimal getTempMax() {
         return tempMax;
     }
 
-    public void setTempMax(double value) {
+    public void setTempMax(BigDecimal value) {
         this.tempMax = value;
     }
 
